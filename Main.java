@@ -76,6 +76,7 @@ public class Main {
             System.out.println(a++);
         }
 
+
         // Свитчи //
 
         switch (a) {
@@ -86,6 +87,17 @@ public class Main {
             case 3:
                 System.out.println("3");
         }
+        // continue, break //
+
+        for (int i = 4; i < 7; i++) {
+            if (i == 5) continue;
+            System.out.println(i);
+        }
+        for (int i = 0; i < 5; i++) {
+            if (i == 5) break;
+            System.out.println(i);
+        }
+        // Классы ( ОПП, Инка, Обса ) //
     }
 }
 
