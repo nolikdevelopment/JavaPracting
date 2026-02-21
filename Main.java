@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -87,6 +90,7 @@ public class Main {
             case 3:
                 System.out.println("3");
         }
+
         // continue, break //
 
         for (int i = 4; i < 7; i++) {
@@ -97,7 +101,34 @@ public class Main {
             if (i == 5) break;
             System.out.println(i);
         }
-        // Классы ( ОПП, Инка, Обса ) //
+
+        // Исключения //
+        int nums;
+
+        try {
+            nums = 42 / 0;
+            System.out.println(nums);
+        } catch (ArithmeticException e) {
+            System.out.println("Деление на 0!");
+        }
+
+        // Лямба выражения //
+
+        Operation operation;
+        operation = (x, y) -> x + y;
+        int sums = operation.operation(10, 20);
+        System.out.println(sums);
+
+        // Коллекции //
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Костян");
+        arrayList.add("Матвей");
+        arrayList.add("Димас");
+        arrayList.add("Нечто");
+        arrayList.remove("Нечто");
+        System.out.println(arrayList);
+
+        //
     }
 }
-
