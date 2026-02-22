@@ -129,6 +129,12 @@ public class Main {
         arrayList.remove("Нечто");
         System.out.println(arrayList);
 
+        // Интерфейсы //
+        Car.isTest();
+
+        // Другие классы //
+        Window.open("https://github.com/nolikdevelopment");
+
         //
     }
 }
